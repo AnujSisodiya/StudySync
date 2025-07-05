@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Rising</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #Sky{
+            height: 730px;
+            width: 1540px;
+            background-color: skyblue;
+
+        }
+        #sun{
+            height: 300px;
+            width: 300px;
+            background-color: #FDEE00;
+background-image: linear-gradient(315deg, #FDEE00 0%, #ff7518 74%);
+            border-radius: 150px;
+            position: relative;
+           
+            animation: 4s linear 0s infinite alternate SunRising;
+            transition: background-color 4s;
+        }
+        /* #sun:hover{
+            background-color: oran;
+        } */
+        @keyframes SunRising {
+
+            from{
+                top:740px;
+                left:720px;
+            }
+            to{
+                top:320px;
+                left:720px;
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="Sky">
+            <div id="sun">
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
